@@ -1,4 +1,5 @@
 {
   "id": "app",
-  "image": "rocket.chat"
+  "image": "rocket.chat:0.58",
+  "dependencies": ["db"]
 }
