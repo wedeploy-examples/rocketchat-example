@@ -1,5 +1,10 @@
 {
   "id": "app",
   "image": "rocket.chat:0.58",
+  "env": {
+      "MONGO_URL": "mongodb://db:27017/rocketchat",
+      "ROOT_URL": "https://app-p1.wedeploy.sh",
+      "Accounts_UseDNSDomainCheck": "True"
+  },
   "dependencies": ["db"]
 }
