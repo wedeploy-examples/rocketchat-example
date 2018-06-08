@@ -1,9 +1,12 @@
 {
   "id": "app",
   "image": "rocket.chat:0.58",
+  "dependencies": ["db"],
   "env": {
     "MONGO_URL": "mongodb://db:27017/rocketchat",
     "DEPLOY_PLATFORM": "wedeploy"
   },
-  "dependencies": ["db"]
+  "healthCheck": {
+    "url": "localhost:3000"
+  }
 }
